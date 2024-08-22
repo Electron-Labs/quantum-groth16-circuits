@@ -1,4 +1,4 @@
-# quantum-gnark-circuits
+# quantum-groth16-circuits
 
 This is a Monorepo containing:
 
