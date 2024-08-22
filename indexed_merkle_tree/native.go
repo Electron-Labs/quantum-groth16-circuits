@@ -325,6 +325,9 @@ func getLeavesSet1() (leaves []NativeLeaf) {
 		leaves[i] = GetZeroLeaf()
 	}
 
+	leaves[0].NextValue = getValueBytes("5555")
+	leaves[0].NextIdx = getIdxBytes("1")
+
 	leaves[1] = NativeLeaf{
 		Value:     getValueBytes("5555"),
 		NextValue: getValueBytes("7777"),
@@ -366,6 +369,10 @@ func getLeavesSet3(batchSize int) (leaves []NativeLeaf) {
 	if mod == 0 {
 		mod = batchSize
 	}
+
+	leaves[0].NextValue = getValueBytes(strconv.Itoa(curLeafValue))
+	leaves[0].NextIdx = getIdxBytes("1")
+
 	for i := 1; i <= nLeaves-mod; i++ {
 		leaves[i] = NativeLeaf{
 			Value:     getValueBytes(strconv.Itoa(curLeafValue)),
@@ -420,20 +427,20 @@ func GenerateIndexedMerkleTreeInsertSet1(testDataDir string) {
 	treeOld, err := mt.New(config, blocksOld)
 	handleError(err)
 
-	lowLeafIdxU64 := uint64(0)
+	lowLeafIdxU64 := uint64(1)
 	lowLeafProof := getNativeInclusionProof(treeOld.Proofs[lowLeafIdxU64])
 	lowLeaf := leaves[lowLeafIdxU64]
 
 	newLeaf := NativeLeaf{
 		Value:     getValueBytes("6666"),
-		NextValue: getValueBytes("7777"),
-		NextIdx:   getIdxBytes("1"),
+		NextValue: lowLeaf.NextValue,
+		NextIdx:   lowLeaf.NextIdx,
 	}
-	newLeafIdxU64 := uint64(2)
+	newLeafIdxU64 := uint64(3)
 	newLeafIdx := getIdxBytes(strconv.FormatUint(newLeafIdxU64, 10))
 	// update low leaf
-	leaves[0].NextValue = newLeaf.Value
-	leaves[0].NextIdx = newLeafIdx
+	leaves[lowLeafIdxU64].NextValue = newLeaf.Value
+	leaves[lowLeafIdxU64].NextIdx = newLeafIdx
 	// insert new leaf
 	leaves[newLeafIdxU64] = newLeaf
 	// new blocks
