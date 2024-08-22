@@ -1,0 +1,7 @@
+.vscode/
+/test_data/**/pk*
+/test_data/**/vk_*
+/test_data/**/cs*
+test_data/**/*.sol
+.env
+/artifacts*

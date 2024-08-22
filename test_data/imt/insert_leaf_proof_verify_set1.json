@@ -1,0 +1,47 @@
+{
+ "Proof": {
+  "OldRoot": "/U4jlOJXZl5ZfV8jWHhAnS/Gs2XHndGlDokNqUAYF0A=",
+  "LowLeaf": {
+   "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+   "NextValue": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=",
+   "NextIdx": "AAAAAAAAAAA="
+  },
+  "LowLeafProof": {
+   "Proof": [
+    "9EAdMr8yh9oTDdYzaa5AvHinaVKMC2BG46WbuY8wAmQ=",
+    "59em/Tl/neR9w6kcBhK7UdobVgakKD3JRlJjevh1Ac0=",
+    "cGIEWKbbWoYxqM3BYEYrHAwlNbyBN1f/yTdGOMOZmwo=",
+    "uniQHnEP7i9A2T5KQ4iPAIzlhvisL2xJMRAzTpJbqz0=",
+    "swcd/obzP+S3krdkwCvxhG5gMJKUu8lV7s7CDeU155s=",
+    "1fTU86EqlmcHiEiBkSaOuiTt7yZuja81HMWN5roHDMg=",
+    "Q4O4oFUFoZ30CtSUhv7KZZJw8uYbjOoQ3veMoib0+ms=",
+    "IjXdDlLV/VFiSkKX+QAZNyR1BXoUn88zNHi2OcbGpwE=",
+    "PxltMbi5fKpFoYfh7PsU63ZGj7lc7lexhiIThhpZM3c=",
+    "nZUtq0vz1zVWQ3xkL3QzUjBBna8dn4i7YJbhqKAnv0E="
+   ],
+   "Path": "AQEBAQEBAQEBAQ=="
+  },
+  "NewLeaf": {
+   "Value": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGgo=",
+   "NextValue": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHmE=",
+   "NextIdx": "AAAAAAAAAAE="
+  },
+  "NewLeafIdx": "AAAAAAAAAAI=",
+  "NewLeafProof": {
+   "Proof": [
+    "PKwxeQjGmf6HOn9u5OjNY/vpkYsjFcl76RWFWQFo4wE=",
+    "mGDcIV1eOd4o5lrDh2kJUIR1IE9XWiz6sT91qSv+vN0=",
+    "cGIEWKbbWoYxqM3BYEYrHAwlNbyBN1f/yTdGOMOZmwo=",
+    "uniQHnEP7i9A2T5KQ4iPAIzlhvisL2xJMRAzTpJbqz0=",
+    "swcd/obzP+S3krdkwCvxhG5gMJKUu8lV7s7CDeU155s=",
+    "1fTU86EqlmcHiEiBkSaOuiTt7yZuja81HMWN5roHDMg=",
+    "Q4O4oFUFoZ30CtSUhv7KZZJw8uYbjOoQ3veMoib0+ms=",
+    "IjXdDlLV/VFiSkKX+QAZNyR1BXoUn88zNHi2OcbGpwE=",
+    "PxltMbi5fKpFoYfh7PsU63ZGj7lc7lexhiIThhpZM3c=",
+    "nZUtq0vz1zVWQ3xkL3QzUjBBna8dn4i7YJbhqKAnv0E="
+   ],
+   "Path": "AQABAQEBAQEBAQ=="
+  }
+ },
+ "NewRoot": "0oPwmottttB9v69Ms8G/RqowrXusKmiT2FvzoZvyhsU="
+}
