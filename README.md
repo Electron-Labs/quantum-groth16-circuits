@@ -20,6 +20,16 @@ Make sure you have go installed in your system. ([guide here](https://go.dev/doc
 -   #### indexed_merkle_tree
     -   `go test github.com/Electron-Labs/quantum-gnark-circuits/indexed_merkle_tree/circuit_test.go -test.v -tags=debug`
 
-### benchmark
+### benchmarks
+
+These benchmarks are corresponding are `BATCH_SIZE=8` and `TREE_DEPTH=9`.
+
+| Machine          | Proving time (sec) |
+| ---------------- | ------------------ |
+| AWS r6a.32xlarge | ~98                |
+| AWS r6a.16xlarge | ~128               |
+| AWS r6a.8xlarge  | ~172               |
+
+To reproduce the benchmarks, run:
 
 -   `./scripts/run_e2e.sh`
